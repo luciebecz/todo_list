@@ -1,0 +1,10 @@
+<h1> <%= @todo.item_name%> </h1>
+
+<h3>Description:</h3> 
+<i> <%=@todo.description %> </i>
+<br />
+<br />
+<br />
+<%= link_to 'Back to List', root_path %>
+
+<%= link_to 'Delete Item', todo_lists_path(@todo), method: :delete, data: {confirm: 'Really Delete Item?'} %>
